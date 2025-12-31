@@ -1,0 +1,28 @@
+.resizeButton {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 20px;
+  width: 20px;
+  gap: 2px;
+  background: none;
+  align-items: center;
+  justify-content: center;
+
+  .row {
+    display: flex;
+    gap: 2px;
+  }
+  .box {
+    background-color: rgb(136, 203, 255);
+    border-radius: 2px;
+    width: 4px;
+    height: 4px;
+  }
+  &:hover {
+    background: none;
+    .box {
+      background-color: rgb(180, 222, 255);
+    }  
+  }
+}

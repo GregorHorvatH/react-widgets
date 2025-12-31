@@ -1,0 +1,25 @@
+.widgets {
+  flex-direction: column;
+  min-height: 100px;
+  overflow: auto;
+  display: flex;
+  margin: -4px;
+  flex: 1;
+
+  .row {
+    position: relative;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    overflow: hidden;
+  }
+  .delimiter {
+    border: 1px solid #3c3c3c;
+    cursor: col-resize;
+
+    &:active {
+      border-color: #03c6fc;
+    }
+  }
+}
